@@ -1,0 +1,22 @@
+name: 'Add monitor for uptimerobot.com'
+description: 'Create a new monitor for uptimerobot for URL'
+author: yojota
+
+inputs:
+  url_monitor:  
+    description: 'URL complete for new monitor. For example: https://yojota.cloud'
+    required: true
+  api_uptimerobot:  
+    description: 'API for uptimerobot generate in site uptimerobot.com in your account'
+    required: true
+
+# outputs:
+#   out_status:
+#     description: "Out put status from API uptimerobot"
+#     value: ${{ steps.add-monitor.outputs.out_status }}
+
+runs:
+  using: "composite"
+  steps:
+    - run: python3 ${{inputs.url_monitor }} ${{inputs.api_uptimerobot }} 
+    - id: add-monitor
