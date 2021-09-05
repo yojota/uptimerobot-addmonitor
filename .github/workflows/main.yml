@@ -5,7 +5,7 @@ on:
     branches: main
     
 jobs:
-  Add Uptimerobot monitor:
+  Add_Uptimerobot_monitor:
     runs-on: ubuntu-latest
     steps:
       - name: Create URL monitor
