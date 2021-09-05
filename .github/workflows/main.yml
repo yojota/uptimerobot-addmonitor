@@ -1,0 +1,15 @@
+name: Add Monitor Uptimerobot
+
+on:
+  push:
+    branches: main
+    
+jobs:
+  Add Uptimerobot monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create URL monitor
+        uses: yojota/uptimerobot-addmonitor@v1
+        with:
+          url_monitor: "https//yojota.cloud"
+          API_uptimerobot: ${{ secrets.API_uptimerobot }}
