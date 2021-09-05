@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - main
+
+name: 🚀 Deploy OpenApiJson from file to azure
+
+jobs:
+  Add Monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create URL monitor
+        uses: yojota/uptimerobot-addmonitor@v1
+        with:
+          url_monitor: "https//yojota.cloud"
+          API_uptimerobot: ${{ secrets.API_uptimerobot }}
