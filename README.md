@@ -7,7 +7,7 @@ If you don't have an account for uptimerobot please take a look on them site [Of
 
 ```yaml
 jobs:
-  test:
+  Add Uptimerobot monitor:
     runs-on: ubuntu-latest
     steps:
       - name: Create URL monitor
