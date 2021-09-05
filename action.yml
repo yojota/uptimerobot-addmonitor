@@ -20,4 +20,3 @@ runs:
   steps:
     - run: python3 ${{inputs.url_monitor }} ${{inputs.api_uptimerobot }} 
       shell: bash
-    - id: add-monitor
