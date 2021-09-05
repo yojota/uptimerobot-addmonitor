@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create URL monitor
-        uses: yojota/uptimerobot-addmonitor@v1
+        uses: yojota/uptimerobot-addmonitor@v1.0
         with:
           url_monitor: "https//yojota.cloud"
           API_uptimerobot: ${{ secrets.API_uptimerobot }}
