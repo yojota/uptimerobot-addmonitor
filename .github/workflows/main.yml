@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Create URL monitor
-        uses: yojota/uptimerobot-addmonitor@v1.4
+        uses: yojota/uptimerobot-addmonitor@v1.5
         with:
           url_monitor: "https://yojota.cloud"
           api_uptimerobot: ${{ secrets.API_UPTIMEROBOT }}
