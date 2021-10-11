@@ -21,7 +21,6 @@ payload = payload + myMonitorURL
 payload = payload + '&friendly_name='
 payload = payload + friendlyName
 
-
 headers = {
     'cache-control': "no-cache",
     'content-type': "application/x-www-form-urlencoded"
