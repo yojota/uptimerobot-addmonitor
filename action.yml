@@ -18,5 +18,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: python3 new_monitor.py ${{inputs.url_monitor }} ${{inputs.api_uptimerobot }} 
+    - run: python3 ./new_monitor.py ${{inputs.url_monitor }} ${{inputs.api_uptimerobot }} 
       shell: bash
