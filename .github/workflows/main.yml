@@ -8,6 +8,7 @@ jobs:
   Add_Uptimerobot_monitor:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Create URL monitor
         uses: yojota/uptimerobot-addmonitor@v1.3
         with:
