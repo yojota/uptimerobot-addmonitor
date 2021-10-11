@@ -11,11 +11,12 @@ friendlyName = "Monitor " + myMonitorURL
 #API key for uptimerobot
 API_key = sys.argv[2]
 
+
 #endpoint
 url = "https://api.uptimerobot.com/v2/newMonitor"
           
 #concat payload with variables
-payload = "api_key=" + API_key + "&format=json&type=1&url=http%3A%2F%2F"
+payload = "api_key=" + API_key + "&format=json&type=1&url="
 payload = payload + myMonitorURL
 payload = payload + '&friendly_name='
 payload = payload + friendlyName
